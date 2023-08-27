@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MR";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5px 20px 5px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 35px;
+}
+.header__nav-link,
+.header__right-link {
+  color: #323232;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.header__nav-right {
+  display: flex;
+  gap: 40px;
+}
+.header__topp,
+.main__topp {
+  width: 100%;
+  height: 2px;
+  border-radius: 0.5px;
+  background: #323232;
+}
+.header__box {
+  display: grid;
+  grid-template-columns: 4.3fr 5.7fr;
+  grid-auto-rows: minmax(294px, auto);
+  gap: 24px;
+  margin-top: 40px;
+}
+.header__item:nth-of-type(2) {
+  grid-row: span 2;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #e1e1e1;
+  gap: 12px;
+}
+.header__item:first-of-type {
+  gap: 43px;
+}
+.header__item:nth-of-type(2) {
+  gap: 24px;
+}
+.header__item-text,
+.main__box-title-text{
+  text-align: center;
+  color: #323232;
+  font-size: 16px;
+}
+.header__item-title,
+.main__box-title-item {
+  color: #000;
+  font-family: "MB";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__item-size {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+.skid50,
+.skid20 {
+  position: relative;
+}
+.skid20::before {
+  content: '20%';
+}
+.skid50::before {
+  content: '50%';
+}
+.new::before {
+  content: 'NEW';
+}
+.skid15::before {
+  content: '15%';
+}
+.skid30::before {
+  content: '30%';
+}
+.skid10::before {
+  content: '10%';
+}
+
+.skid20::before,
+.skid50::before,
+.new::before,
+.skid15::before,
+.skid30::before,
+.skid10::before {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  padding: 11px 38px;
+  border-radius: 10px;
+background: #323232;
+color: #FFF;
+font-size: 22px;
+text-transform: capitalize;
+}
+.main__title {
+  text-align: center;
+  margin: 60px 0 20px 0;
+  color: #000;
+font-size: 30px;;
+letter-spacing: 2.2px;
+text-transform: uppercase;
+}
+.main__box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(294px, auto);
+  gap: 24px;
+  margin-top: 40px;
+}
+.main__box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+background: #E1E1E1;
+padding: 72px 0 39px 0;
+row-gap: 20px;
+position: relative;
+}
+.main__box-title-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.main__bottom-text {
+  text-align: center;
+  margin-top: 60px;
+  color: #323232;
+font-size: 30px;
+}
+
+.main__bottom-box:first-of-type {
+  background: url(../images/mainbot1.jpg) no-repeat center /cover;
+  height: 470px;
+  width: 50%;
+}
+.main__bottom-box:last-of-type {
+  background: url(../images/mainbot2.jpg) no-repeat center /cover;
+  height: 470px;
+  width: 50%;
+}
+.main__bottom {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+.main__bottom-title {
+  max-width: 466px;
+  width: 100%;
+  margin: 110px 0 30px 60px;
+  color: #FFF;
+font-family: 'MB';
+font-size: 22px;
+font-variant: all-small-caps;
+}
+.main__bottom-text {
+  color: #E1E1E1;
+font-size: 18px;
+line-height: 22px; /* 122.222% */
+font-variant: all-small-caps;
+max-width: 462px;
+width: 100%;
+margin: 0 110px 0 64px;
+}
+
+.main__bottom-data {
+  display: flex;
+  gap: 10px;
+  margin: 100px 0 0 60px;
+}
+.mian__data-text {
+  color: #FFF;
+font-size: 16px;
+text-transform: uppercase;
+}
+.soveti {
+  position: relative;
+}
+.soveti::before {
+  padding: 13px 30px;
+  content: 'Советы';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 8px;
+background: #FFF;
+font-size: 20px;
+}
+.footer {
+  background: #323232;
+  margin-top: 40px;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 87px 0;
+}
+.footer__box1-item {
+  color: #FFF;
+font-family: 'MB';
+font-size: 32px;
+line-height: 23px; /* 71.875% */
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.footer__nav-link {
+  color: #FFF;
+font-size: 18px;
+text-transform: capitalize;
+}
+.footer__box2-item {
+  color: #FFF;
+font-size: 22px;
+letter-spacing: 2.2px;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+.footer__box2-text {
+  color: #FFF;
+font-size: 18px;
+font-variant: all-small-caps;
+}
+.foot__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.footer__box2-botom {
+  color: #FFF;
+font-size: 18px;
+font-variant: all-small-caps;
+letter-spacing: 2.5px;
+margin: 60px 0 30px 0;
+}
+.footer__box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.foot__soc-siti {
+  display: flex;
+  gap: 26px;
+  padding: 40px 0 0 0 ;
+}
+
+@media (max-width:1250px) {
+  .header__top {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .header__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .main__box {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .main__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:1120px) {
+  .footer__box {
+    display: grid;
+    row-gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  .main__bottom {
+    display: none;
+  }
+
+}
+@media (max-width:680px) {
+  .main__box {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width:680px) {
+  .header__nav-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width:550px) {
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    display: none;
+  }
+  .foot__box {
+    padding: 0;
+  }
+}
+
